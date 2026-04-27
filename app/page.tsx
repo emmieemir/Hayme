@@ -112,7 +112,7 @@ export default function Home() {
             </p>
 
             <p className="text-gray-400 mb-6">
-              Based in Pakistan • Open Worldwide
+              Based in Pakistan • Open World-wide
             </p>
 
             {/* CENTER BUTTON ON MOBILE */}

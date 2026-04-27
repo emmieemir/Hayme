@@ -13,52 +13,76 @@ export default function Home() {
       {/* HERO */}
       <section className="relative min-h-screen flex items-center px-6 pb-32">
 
+        {/* MOBILE PROFILE IMAGE (TOP LEFT) */}
+        <div className="absolute top-6 left-6 z-40 md:hidden">
+          <div className="relative w-[70px] h-[70px]">
+
+            <div className="
+              absolute
+              inset-0
+              rounded-full
+              bg-gradient-to-tr
+              from-indigo-400
+              via-purple-400
+              to-pink-400
+              blur-2xl
+              opacity-30
+              scale-110
+            " />
+
+            <Image
+              src="/images/home.JPG"
+              alt="Emama"
+              fill
+              className="object-cover rounded-full"
+              priority
+            />
+          </div>
+        </div>
+
         {/* RESUME BUTTON - MOBILE TOP RIGHT */}
-       <a
-  href="/emama-resume.pdf"
-  download
-  className="
-    md:hidden
-    absolute
-    top-8
-    right-6
-    sm:right-6
-    z-50
+        <a
+          href="/emama-resume.pdf"
+          download
+          className="
+            md:hidden
+            absolute
+            top-9
+            right-6
+            z-50
+            group
+            overflow-hidden
+            px-4
+            py-2
+            text-sm
+            rounded-full
+            border
+            border-black
+            font-medium
+            bg-white
+            shadow-md
+          "
+        >
+          <span className="
+            absolute
+            inset-0
+            bg-black
+            scale-x-0
+            origin-left
+            transition-transform
+            duration-300
+            group-hover:scale-x-100
+          "></span>
 
-    group
-    overflow-hidden
-
-    px-4
-    py-2
-    text-sm
-    rounded-full
-    border
-    border-black
-    font-medium
-    bg-white
-    shadow-md
-  "
->
-  <span className="
-    absolute
-    inset-0
-    bg-black
-    scale-x-0
-    origin-left
-    transition-transform
-    duration-300
-    group-hover:scale-x-100
-  "></span>
-
-  <span className="relative z-10 text-black group-hover:text-white transition">
-    Resume
-  </span>
-</a>
+          <span className="relative z-10 text-black group-hover:text-white transition">
+            Resume
+          </span>
+        </a>
 
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
           {/* LEFT */}
-          <div className="pt-16 md:pt-0 text-center md:text-left">
+          <div className="pt-22 md:pt-0 text-center md:text-left">
 
             <p className="text-gray-500 mb-4 text-lg">
               Hello, I'm
@@ -112,10 +136,10 @@ export default function Home() {
             </p>
 
             <p className="text-gray-400 mb-6">
-              Based in Pakistan • Open World-wide
+              Based in Pakistan • Open Worldwide
             </p>
 
-            {/* CENTER BUTTON ON MOBILE */}
+            {/* BUTTON */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
@@ -129,10 +153,9 @@ export default function Home() {
 
           </div>
 
-          {/* RIGHT IMAGE */}
+          {/* RIGHT IMAGE (DESKTOP ONLY) */}
           <div className="hidden md:flex flex-col items-center gap-8">
 
-            {/* IMAGE */}
             <div className="relative w-[340px] h-[340px]">
 
               <div className="
@@ -155,7 +178,6 @@ export default function Home() {
                 className="object-cover rounded-full relative"
                 priority
               />
-
             </div>
 
             {/* DESKTOP RESUME BUTTON */}
@@ -197,7 +219,6 @@ export default function Home() {
 
       {/* TECH STACK */}
       <section className="py-24 bg-white">
-
         <div className="max-w-6xl mx-auto px-6">
 
           <h2 className="text-3xl font-bold mb-4">
@@ -210,7 +231,6 @@ export default function Home() {
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-
             {[
               "React",
               "Next.js",
@@ -228,24 +248,14 @@ export default function Home() {
               <div
                 key={tech}
                 className="
-                  border
-                  border-gray-200
-                  rounded-xl
-                  px-6
-                  py-4
-                  text-center
-                  font-medium
-                  hover:border-black
-                  hover:-translate-y-1
-                  transition
-                  duration-300
-                  bg-[#FAFAFA]
+                  border border-gray-200 rounded-xl px-6 py-4
+                  text-center font-medium hover:border-black
+                  hover:-translate-y-1 transition duration-300 bg-[#FAFAFA]
                 "
               >
                 {tech}
               </div>
             ))}
-
           </div>
 
         </div>
@@ -266,22 +276,14 @@ export default function Home() {
 
           <Link href="/contact">
             <button className="
-              relative
-              px-6
-              py-3
-              border-2
-              border-black
-              rounded-full
-              overflow-hidden
-              group
+              relative px-6 py-3 border-2 border-black
+              rounded-full overflow-hidden group
             ">
               <span className="
-                absolute inset-0
-                bg-black
+                absolute inset-0 bg-black
                 translate-x-[-100%]
                 group-hover:translate-x-0
-                transition
-                duration-500
+                transition duration-500
               "></span>
 
               <span className="relative z-10 group-hover:text-white transition">

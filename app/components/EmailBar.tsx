@@ -31,7 +31,7 @@ export default function EmailBar() {
 
       {/* EMAIL */}
       <a
-        href="mailto:youremail@gmail.com"
+        href="mailto:emamasaleem00@gmail.com"
         className="
           text-[10px] md:text-sm
           text-gray-500

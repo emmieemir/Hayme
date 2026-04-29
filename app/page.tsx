@@ -42,7 +42,7 @@ export default function Home() {
 
         {/* RESUME BUTTON - MOBILE TOP RIGHT */}
         <a
-          href="/emama-resume.pdf"
+          href="/EmamaSaleem.pdf"
           download
           className="
             md:hidden
@@ -182,7 +182,7 @@ export default function Home() {
 
             {/* DESKTOP RESUME BUTTON */}
             <a
-              href="/emama-resume.pdf"
+              href="/EmamaSaleem.pdf"
               download
               className="
                 relative

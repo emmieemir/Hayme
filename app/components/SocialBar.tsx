@@ -39,7 +39,7 @@ export default function SocialBar() {
           <FaWhatsapp className="text-2xl text-gray-600 hover:text-black hover:-translate-y-1 transition duration-300 cursor-pointer" />
         </a>
 
-        <a href="#" target="_blank">
+        <a href="https://www.linkedin.com/in/emama-saleem-942263320/" target="_blank">
           <FaLinkedin className="text-2xl text-gray-600 hover:text-black hover:-translate-y-1 transition duration-300 cursor-pointer" />
         </a>
 
@@ -91,7 +91,7 @@ export default function SocialBar() {
     <FaWhatsapp className="text-base text-gray-600 hover:text-black transition duration-300" />
   </a>
 
-  <a href="#" target="_blank">
+  <a href="https://www.linkedin.com/in/emama-saleem-942263320/" target="_blank">
     <FaLinkedin className="text-base text-gray-600 hover:text-black transition duration-300" />
   </a>
 

@@ -1,13 +1,17 @@
 export default function Contact() {
   return (
-    <main className="
-bg-[#FAFAFA] 
-text-[#111827] 
-min-h-screen 
-flex 
-items-center 
-px-6
-">
+<main
+  className="
+    bg-[#FAFAFA]
+    text-[#111827]
+    min-h-screen
+    flex
+    items-start md:items-center
+    px-6
+    pt-28 md:pt-0
+    pb-16
+  "
+>
 
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 w-full">
 

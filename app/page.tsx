@@ -31,7 +31,7 @@ export default function Home() {
             " />
 
             <Image
-              src="/images/home.JPG"
+              src="/images/try.jpeg"
               alt="Emama"
               fill
               className="object-cover rounded-full"
@@ -172,7 +172,7 @@ export default function Home() {
               " />
 
               <Image
-                src="/images/home.JPG"
+                src="/images/try.jpeg"
                 alt="Emama"
                 fill
                 className="object-cover rounded-full relative"
